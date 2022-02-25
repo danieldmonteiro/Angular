@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-grid{
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+}
+header{
+    background-color: black;
+    height: 285px;
+    width: 1920px;
+}
+.logo{
+    width: 1920px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    width: 1920px;
+    height: 101px;
+    background-color: red;
+    
+}
+.menu-principal{
+    width: 1600px;
+    height: auto;
+}
+.lista-menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+}
+.lista-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner{
+    height: 1125px;
+    width: 1920px;
+    margin-top: 100px;
+    background-image: url(/assets/img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.texto-banner{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100px;
+    font-style: italic;
+    font-weight: bold;
+    padding-top: 120px;
+}
+#carrosel img{
+    display: none;
+    height: 1125px;
+    width: 1920px;
+    margin-top: 100px;
+}
+.banner-ativo{
+    display: flex;
+}
+.e-mail{
+    height: 111px;
+    width: 1920px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+input{
+    color:black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+}
+button{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: red;
+    border: none;
+    padding: 2px;
+}
+footer{
+    background-color: red;
+    width: 1920px;
+    height: 642px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.contato h2{
+    color: black;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 81px;
+    font-weight: bold;
+    margin-bottom: 45px;
+}
+.contato p{
+    color: black;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 48px;
+}
+.redes-sociais h2{
+    color: black;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 81px;
+    font-weight: bold;
+    margin-bottom: 80px;
+}
+.redes-sociais img{
+    margin-right: 80px;
+}
+.contato img{
+    margin-right: 20px;
+}
+.menu-ativo{
+    display: flex;
+}
+.login{
+    width: 1920px;
+    height: 1000px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-principal{
+    display: flex;
+    flex-direction: column;
+}
+.login-principal h3{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+.login-principal p{
+    margin-top: 40px;
+}
+.botao-login{
+    background-color: black;
+    margin-top: 100px;
+}
+.barras{
+    width: 30px;
+    display: none;
+}
+.posicionamento-header{
+    position: relative;
+}
+@media only screen and (max-width: 1200px) {
+    .container-grid{
+      width: 90%;
+    }
+    header{
+        width: 768px;
+        height: 184px;
+    }
+    .logo{
+        width: 768px;
+        height: 100%;
+    }
+    .menu{
+        width: 768px;
+        height: 38px;
+    }
+    .menu a{
+        font-size: 16px;
+    }
+    
+    .logo img{
+        width: 374px;
+        height: 179px;
+    }
+    .banner{
+        width: 768px;
+        height: 361px;
+        margin-top: 38px;
+    }
+    .texto-banner{
+        font-size: 40px;
+        padding-top: 30px;
+    }
+    #carrosel img{
+        height: 361px;
+        width: 768px;
+        margin-top: 38px;
+    }
+
+    .e-mail{
+        width: 768px;
+        height: 46px;
+    }
+    label{
+        font-size: 18px;
+    }
+    input{
+        font-size: 18px;
+    }
+    button{
+        font-size: 18px;
+    }
+    footer{
+        width: 768px;
+        height: 275px;
+    }
+    .contato h2{
+        font-size: 22px;
+    }
+    .contato p{
+        font-size: 18px;
+    }
+    .contato img{
+        width: 49px;
+        height: 37px;
+    }
+    .redes-sociais h2{
+        font-size: 22px;
+        margin-bottom: 40px;
+    }
+    .redes-sociais img{
+        width: 89px;
+        height: 85px;
+        margin-right: 30px;
+    }
+}
+@media only screen and (max-width: 768px){
+
+    .barras{
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header{
+        width: 320px;
+        height: 93px;
+    }
+    .logo{
+        width: 320px;
+        height: 100%;
+    }
+    .menu{
+        width: 320px;
+        height: 38px;
+    } 
+    .logo img{
+        width: 195px;
+        height: 92px;
+    }
+    .banner{
+        width: 320px;
+        height: 159px;
+        margin-top: 38px;
+    }
+    .texto-banner{
+        font-size: 16px;
+        padding-top: 30px;
+    }
+    #carrosel img{
+        height: 159px;
+        width: 320px;
+        margin-top: 38px;
+    }
+    .e-mail{
+        width: 320px;
+        height: 35px;
+    }
+    label{
+        display: none;
+    }
+    input{
+        font-size: 14px;
+    }
+    button{
+        font-size: 14px;
+    }
+    footer{
+        width: 320px;
+        height: 374px;
+        flex-direction: column;
+    }
+    .contato h2{
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .contato p{
+        font-size: 14px;
+    }
+    .contato img{
+        width: 44px;
+        height: 32px;
+    }
+    .redes-sociais h2{
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    .redes-sociais img{
+        width: 79px;
+        height: 75px;
+        margin-right: 20px;
+    }
+    .lista-menu{
+        display: none;
+        flex-direction: column;
+        width: 200px;
+        position: absolute;
+        top: 0;
+        right: 65;
+        background-color: black;
+    }
+    .lista-menu a{
+        font-size: 16px;
+        text-align: center;
+        padding: 15px;
+    }
+}
