@@ -10,7 +10,7 @@
                     <a href="">Games</a>
                     <a href="">Novidades</a>
                     <a href="">Promoções</a>
-                    <a href="login.html">Login</a>
+                    <a href="">Login</a>
                 </nav>
                 <a href="#" onclick = "mostrarMenu()" id="barras"><img class="barras" src="assets/img/menubarra.svg" alt="Menu de Barras"></a>
         </div>
@@ -22,9 +22,9 @@
         </div>
     </section>
     <section class="e-mail">
-                <form action="">
-                    <label>Cadastre-se para receber ofertas: &emsp;&emsp;</label><input id="campo-email" type="email" placeholder="Insira seu e-mail" required>
-                    <button onclick="enviarEmail()" class="botao-cadastrar">Enviar</button>
+                <form #userForm="ngForm" (ngSubmit)="onSubmit()">
+                    <label for="email">Cadastre-se para receber ofertas: &emsp;&emsp;</label><input id="email" name="email" [(ngModel)] = "userModel.email" type="email" placeholder="Insira seu e-mail" required>
+                    <button type="submit" class="botao-cadastrar">Enviar</button>
                 </form>
     </section>
     <footer>
